@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.landscapeWarning{
+  position:fixed;
+  top: 0;
+  left:0;
+  height:100%;
+  width:100%;
+  display: none;
+}
+.panning {
+	width: auto;
+	background: url('../Images/back1.jpg');
+    background-repeat: repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.akshatContainer{
+    margin-top: 50px;
+    text-align: center;
+}
+.akshatImage{
+    border-radius: 100%;
+}
+
+.aks{
+    vertical-align: middle;
+}
+h3,h5{
+    font-family:'Cabin', sans-serif;
+}
+.designation{
+    text-align: center;
+    font-size: 1.3em;
+}
+.designation>h5{
+    margin-top: -18px;
+    margin-bottom: 11px;
+}
+
+.quoteText{
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: -30px;
+    margin-right: 5px;
+}
+
+nav>ul{
+    float: right;
+    margin: 2px;
+}
+nav>ul>li{
+    display: inline;
+    text-decoration: none;
+}
+nav>ul>li:hover{
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease-in;
+}
+p{
+    margin: 2%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.contact{
+    border: 2px solid #1995AD;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: black;
+}
+#Aim{
+    height: 200px;
+}
+#Aim p{
+    font-size: 1.0em;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 90%;
+}
+#Aim button{
+    background: #FF420E;
+    font-size: 1.2em;
+    border: 2px solid whitesmoke;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cover{
+    margin-left: 35px !important;
+}
+.resume{
+    background: #89DA59 !important;
+}
+.heading{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    line-height: 2em;
+    margin: 0;  
+    font-size: 1.7em;
+    margin-top: 31px;
+}
+
+
+#contact{
+    text-align: center;
+}
+#address{
+    width: 260px;
+    height: 250px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin-left: 30px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+}
+#address i{
+    vertical-align: middle;
+    font-size: 1.4em;
+    margin-top: 60px;
+}
+.address-link{
+    background-image: url(../Images/contactBack.jpg);
+    background-size: cover;
+    height: 170px;
+    border-bottom: 2px solid grey;
+}
+#address-body{
+    width: 260px;
+    height: 150px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin-left: 30px;
+}
+.physical-address p{
+    font-weight: bold;
+    text-align: center;
+}
+.other-method{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    text-align: start;
+    width: 260px;
+    margin-left: 30px;
+    line-height: 1.9em;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.2em; 
+}
+.other-method>i{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.linkedin{
+    background-color: #0372AC;
+    color: white;
+}
+.skype{
+    background-color: #00aff0;
+    color: white;
+}
+.email{
+    background-color: #0069c1;
+    color: white;
+}
+.phone{
+    background-color: #124095;
+    color: white;
+}
+.github{
+    color: white;
+    background-color: #24292e;
+}
+.linkedin span{
+    vertical-align: middle;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.skype span{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.email span{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.phone span{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.github span{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: initial;
+}
+/** Media Queries **/
+@media screen and(max-height:470px){
+    .akshatContainer{
+        margin-top: 108px;
+    }
+}
+@media screen and (min-width:375px){
+    #address{
+        margin-left: 59px;
+    }
+    .other-method{
+        margin-left: 59px;
+    }
+    .cover{
+        margin-left:66px !important;
+    }
+}
+@media screen and (min-width: 412px){
+    #address{
+        margin-left: 75px;
+    }
+    .links{
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .akshatImage{
+        height: 180px;
+    }
+    .designation{
+        font-size: 1.5em;
+    }
+    .designation>h5{
+        margin-top: -30px;
+    }
+    #address{
+        margin-left: 86px;
+    }
+    .other-method{
+        margin-left: 86px;
+    }
+    .cover{
+        margin-left:95px !important;
+    }
+    #Aim p{
+        margin-left: 19px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .akshatImage{
+        height: 126px;
+    }
+    .quotes{
+        margin-left: 153px;
+    }
+    .quoteText{
+        width: 60%;
+    }
+
+    .designation{
+        font-size: 1.7em;
+    }
+    .links{
+        float: right;
+        margin-top: -242px;
+        margin-right: 20px;
+    }
+    #Aim p{
+        margin-left: 116px;
+        width: 70%;
+    }
+    .cover{
+        margin-left: 261px !important;
+    }
+    .contact{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .akshatImage{
+        height: 224px;
+    }
+    .quotes{
+        margin-left: 200px;
+    }
+    .designation{
+        font-size: 1.4em;
+    }
+    .akshatContainer{
+        margin-top: 78px;
+    }
+    #Aim p{
+        margin-left: 186px;
+        width: 68%;
+        font-size: 1.3em;
+    }
+    .cover{
+        margin-left: 383px !important;
+        font-size: 1.4em;
+    }
+    #address{
+        margin-left: 126px;
+        font-size: 1.2em;
+        height: 275px;
+    }
+    .links{
+        margin-top: -247px;
+        margin-right: 99px;
+        font-size: 1.0em;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .akshatContainer{
+        margin-top: 89px;
+    }
+    .akshatImage{
+        height: 260px;
+    }
+
+    .quotes{
+        margin-left: 300px;
+    }
+    .quoteText{
+        width: 60%
+    }
+    .designation{
+        font-size: 2em;
+    }
+    #Aim p{
+        margin-left: 277px;
+        width: 63%;
+        font-size: 1.5em;
+    }
+    #Aim button{
+        margin-right: 30px;
+        font-size: 1.5em;
+    }
+    .cover{
+        margin-left: 603px !important;
+    }
+    #address{
+        margin-left: 236px;
+    }
+    .links{
+        margin-right: 203px;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .akshatContainer{
+        margin-top: 200px;
+    }
+    .akshatImage{
+        height: 460px;
+    }
+    .heading{
+        font-size: 2.7em;
+    }
+    .designation{
+        font-size: 2.5em;
+    }
+    .contact{
+        font-size: 40px;
+    }
+    .designation>h5{
+        margin-bottom: 26px;
+    }
+    .quotes{
+        margin-left: 500px;
+    }
+    .quoteText{
+        width: 60%;
+        font-size: 2.3em;
+        bottom: -50px;
+    }
+    #Aim{
+        height: 310px;
+    }
+    #Aim p {
+        margin-left: 595px;
+        width: 50%;
+        font-size: 2.2em;
+    }
+    #Aim button {
+        margin-right: 78px;
+        font-size: 2.2em;
+    }
+    .cover{
+        margin-left: 29em !important;
+    }
+    #address{
+        margin-left: 488px;
+        width: 401px;
+        font-size: 1.9em;
+        height: 341px;
+    }
+    .links{
+        font-size: 1.5em;
+        margin-right: 481px;
+        margin-top: -342px;
+    }
+    .other-method{
+        width: 291px;
+    }
+}
+
+/*@media only screen and (orientation : landscape){
+    .landscapeWarning{
+        visibility: visible;
+        display: block;
+    }
+    header{
+        visibility: hidden;
+    }
+    main{
+        visibility: hidden;
+    }
+}*/
